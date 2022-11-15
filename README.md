@@ -13,7 +13,8 @@ interesting thought - idea of quotas in modern movies now breaking away from a o
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Research Questions: A list of research questions you would like to address during the project.
+Research Questions: 
+The following questions will serve to scope and guide our efforts during the course of this project ---
 How are m/f characters characterized? Can NLP be useful for this?
     How do they comport themselves? 
     What do they say?
@@ -31,20 +32,34 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 Proposed additional datasets (if any): List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible.
 
+There are no additional datasets being considered.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Methods:
+
+The bulk of our data wrangling/processing occurs with the stanford NLP library. 
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Methods
+Proposed timeline:
+11/18         : P2 due
+11/18 - 12/2  : Homework 2 interregnum 
+12/3  - 12/4  : Explore Simple and Complex Website options
+12/4  - 12/11 : Data analysis
+12/4  - 12/18 : Build out website wireframe and populate as results come in
+12/18 - 12/23 : Review, Edit, Polish
+12/18 - 12/23 : Compile all work into single notebook
+12/18 - 12/23 : Finalize ReadMe
+12/23         : P3 due
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Proposed timeline
+Organization within the team: A list of internal milestones up until project Milestone P3"
+How does this differ from the question above? See ED FORUM with same question
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Organization within the team: A list of internal milestones up until project Milestone P3.
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-Questions for TAs (optional): Add here any questions you have for us related to the proposed project.
+Questions for TAs (optional): 
+how are ur muscles so big 

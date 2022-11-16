@@ -28,52 +28,27 @@ There are no additional datasets being considered.
 
 
 ## Methods
-TODO TODO TODO TODO TODO TODO 
 
+#### Data Exploration
+#### Data Pre-Processing
+#### Stanford NLP
+#### Empath
 
 
 ## Proposed timeline
 All of the following dates are deadlines. Many steps are independant and will be pursued in parallel.
 * 11.18.22 -- P2 due, shift focus to HW2
 * 12.4.022 -- Explore and decide between simple and complex website options
-* 11.7.022 -- Completed dictionaries of associations
 * 12.11.22 -- Completed data analysis , Built website wireframe
 * 12.18.22 -- Website Populated with analysis results and datastory 
 * 12.22.22 -- Completed editing. All work compiled in one notebook, ReadMe finalized
 * 12.23.22 -- **P3 due** 
 
 ## Organization within the team
-<table class="tg" style="undefined;table-layout: fixed; width: 300px">
-<colgroup>
-<col style="width: 70px">
-<col style="width: 70px">
-</colgroup>
-<thead>
-  <tr>
-    <th class="tg-0lax"></th>
-    <th class="tg-0lax">Tasks</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0lax">Arthur </td>
-    <td class="tg-0lax">xxxxxxxxxxxxxxxxxxxxxx<br><br>yyy<br><br>zzz</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Camille</td>
-    <td class="tg-0lax">xxx<br><br>yyy<br><br>zzz</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Nerea</td>
-    <td class="tg-0lax">xxx<br><br>yyy<br><br>zzz</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Nico</td>
-    <td class="tg-0lax">xxx<br><br>yyy<br><br>zzz</td>
-  </tr>
-</tbody>
-</table>
-
+* Arthur - 
+* Camille -
+* Nico -
+* Nerea -
 
 ## Questions for TAs 
 TODO TODO TODO TODO TODO TODO

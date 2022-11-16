@@ -1,33 +1,28 @@
-# README.md
-## Study on Representation in Cinema
+# Study on Representation in Cinema
 ___Utopiansky2022: Arthur Ardelea, Camille , Nerea, Nico___
 
 
 
 ## Abstract:
-Art imitates life and life imitates art - Cinema has the effortless power to capture the zeitgeist of an era. In this project we will be studying representation in cinema over time to better understand how general societal sentiment may have changed in the last odd century. This project is motivated by the understanding that the 20th century was a time of dynamic social upheavel and mobility. In the United States, Jim Crowe laws citing 'seperate but equal races' existed into the 1960's. In Switzerland, womens sufferage at the federal level was granted as late as 1971. Our conclusions are predicated on the idea that by understanding how one is represented in cinema, we are informed on the society which gave rise to the character. Notable focus will be placed on analysis by gender because ???????
+Art imitates life and life imitates art - Cinema has the effortless power to capture the zeitgeist of an era. In this project we will be studying representation in cinema over time to better understand how general societal sentiment may have changed in the last century. This project is motivated by the understanding that the 20th century was a time of dynamic social upheavel and mobility. In the United States, Jim Crowe laws citing 'seperate but equal races' existed into the 1960's. In Switzerland, womens sufferage at the federal level was granted as late as 1971. Our conclusions are predicated on the idea that by understanding how one is represented in cinema, we are informed on the society which gave rise to the character. Notable focus will be placed on analysis by gender.
 
-interesting thought - idea of quotas in modern movies now breaking away from a once natural reflection/process
+interesting thought - idea of quotas in hollywood movies now breaking away from a once natural reflection/process. Instead of reflecting society it reflects an artificial construct meant to nudge. 
 
 
 ## Research Questions: 
 The following questions will serve to scope and guide our efforts during the course of this project:
-\begin{itemize}
-   \item How are m/f characters characterized? Can NLP be useful for this?
-   \begin{itemize}
-      \item How do they comport themselves? 
-      \itemWhat do they say?
-      \item What do they think?
-      \itemHow do they act?
-      \item profession?
-   \end{itemize}   
-   \item Can we extract archetypes / stereotypes across genders through lexical analysis?
-   \item Are women less complex characters? Are women underrepresented?
-   \item What is the prevelence of m/f characters?
+*How are m/f characters characterized? Can NLP be useful for this?
+    + How do they comport themselves? 
+    + What do they say?
+    + What do they think?
+    + How do they act?
+    + profession?
+* Can we extract archetypes / stereotypes across genders through lexical analysis?
+* Are women less complex characters? Are women underrepresented?
+* What is the prevelence of m/f characters?
 
-   \item Is there a discrepency in age between m/f characters? are senior women under-represented
-   \item Do all of the arformentioned questions show an evolution over time? Do they show discernable differences across geographies?
-\end{itemize}   
+* Is there a discrepency in age between m/f characters? are senior women under-represented
+* Do all of the arformentioned questions show an evolution over time? Do they show discernable differences across geographies?  
 
 
 ## Proposed additional datasets (if any):

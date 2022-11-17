@@ -84,7 +84,7 @@ def agent_patient_verbs(doc):
 
     return (pd.DataFrame(data=agent_verbs), pd.DataFrame(data=patient_verbs))
 
-def create_table_dependencies(plot):
+def create_table_dependencies(plot, nlp):
     doc = nlp(plot)
     attrs_table = char_attributes(doc)
     agent_verbs = agent_patient_verbs(doc)[0] 
@@ -104,16 +104,16 @@ def create_table_dependencies(plot):
                 attrs_table['Patient Verbs'][idx] = pv
     return attrs_table
 
-def Analyse_Plots(df_plots):
+def Analyse_Plots(df_plots, nlp):
     plot_analysis = pd.DataFrame()
     chars = []
     movies = []
     averbs = []
     pverbs = []
     attrs = []
-    for i, summ in enumerate(df_plots['Summary']):
-        print('Plot analysed ', i, ' out of ', len(df_plots['Summary']))
-        male_gaze = create_table_dependencies(summ)
+    for i, summ in enumerate(df_plots['Plot Summary']):
+        print('Plot analysed ', i, ' out of ', len(df_plots['Plot Summary']))
+        male_gaze = create_table_dependencies(summ, nlp)
         for j in range(len(male_gaze)):
             movies.append(df_plots['Wikipedia movie ID'][i])
             chars.append(male_gaze['Character Names'][j])

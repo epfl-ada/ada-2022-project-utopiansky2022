@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import stanza
 
+''' Use the ner processor's output to get the "PERSONS" in the plots
+We take only the first name'''
+
 def get_characters(doc):
     characters = []
     characters_name = []
@@ -29,6 +32,8 @@ def recursive_find_adjs(root, sentence):
     for w in children:
         results += recursive_find_adjs(w, sentence)
     return results
+
+''' The following function uses the recursive search of attributes and outputs a dataframe with the character name and its attributes'''
 
 def char_attributes(doc):
     names = []
@@ -66,6 +71,9 @@ def char_attributes(doc):
     char_attributes= char_attributes[['Character Names','Total Attributes']]
     return (char_attributes.drop_duplicates().reset_index())
 
+''' This function finds agent and patient verbs using the deprel output of the 
+depparse processor'''
+
 def agent_patient_verbs(doc):
     agent_verbs = {'id': [], 'word': [], 'head_id': [], 'agent_verbs': []}
     patient_verbs = {'id': [], 'word': [], 'head_id': [], 'patient_verbs': []}
@@ -83,6 +91,10 @@ def agent_patient_verbs(doc):
                 patient_verbs['patient_verbs'].append(sentence.words[word.head-1].text)
 
     return (pd.DataFrame(data=agent_verbs), pd.DataFrame(data=patient_verbs))
+
+
+''' Here we implement the NLP analysis, using the previous functions to get the verbs and attributes related to the found characters in a plot summary'''
+
 
 def create_table_dependencies(plot, nlp):
     doc = nlp(plot)
@@ -102,7 +114,10 @@ def create_table_dependencies(plot, nlp):
             if (w in attrs_table['Total Attributes'][idx] or w == char):
                 pv.append(patient_verbs['patient_verbs'][idx2])
                 attrs_table['Patient Verbs'][idx] = pv
+            
     return attrs_table
+
+''' Here is the main function, which loops through the whole dataset and creates a new one containing movie IDs, character's first name, attributes, agent verbs and patient verbs'''
 
 def Analyse_Plots(df_plots, nlp):
     plot_analysis = pd.DataFrame()

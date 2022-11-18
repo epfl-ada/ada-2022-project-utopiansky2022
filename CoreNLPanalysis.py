@@ -18,6 +18,12 @@ def get_characters(doc):
     characters_name = list(np.unique(characters_name))
     return characters, characters_name
 
+'''For each character, we look at immediate verb governors and attribute syntactic dependencies to all of the entity’s mention headwords that are extracted from the typed dependency tuples produced by the parser:
+    + Agent verbs. Verbs for which the entity is an agent argument (nsubj or agent).
+    + Patient verbs. Verbs for which the entity is the patient, theme or other argument (dobj, nsubjpass, iobj, or any prepositional argument prep *).
+    + Attributes. Adjectives and common noun words that relate to the mention as adjectival modifiers, noun-noun compounds, appositives, or copulas (nsubj or appos governors, or nsubj, appos, amod, nn dependents of an entity mention). 
+    
+    We end up with a dataframe containing Agent Verbs, Patient Verbs and Attributes corresponding to each character in the plot. '''
 
 ''' This function finds attributes recursively, by first checking the words in 
 the sentence which are not roots (main verb), and then checking all adjectives

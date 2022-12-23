@@ -1,6 +1,7 @@
 # Into the Male Gaze, a story of cinema representation
 *Utopiansky2022 : Arthur Ardelea, Camille Delgrange, Nerea Carbonell, Nico Raith*
 
+Website can be found ___[HERE](https://nicoraith.github.io/landing-page-theme/#home)___
 
 ## Abstract
 Art imitates life and life imitates art - Cinema has the power to capture the zeitgeist of an era. In this project we will be studying gender representation in cinema to better understand trends in societal sentiments. Our goal is to assess if representations differ by gender and if they have evolved through time. This project is motivated by the fact that the 20th century was a time of dynamic social upheavel and mobility, e.g., in Switzerland, womens sufferage at the federal level was granted as late as 1971.  <br />
@@ -10,15 +11,14 @@ This project is based on the CMU Movie Summary Corpus Datasets. It is predicated
 
 ## Research Questions
 The following questions do not comprise an exhaustive list, but are fundamental to study gender representation in movies. They serve to scope, inspire, and guide the analysis.
-* What is the prevalence of m/f characters?
-* Is there a discrepency in age between m/f characters? are senior women under-represented?
-* How can we differentiate between depictions of male and female characters? 
-    + How do they act? How do others act unto them?
-    + How are they described? 
-    + What set of roles and professions do they occupy?
-* Are women frequently less complex characters? Are women underrepresented? 
+
+* What is the prevalence of male and female characters?
+* Is there a discrepancy in age between male and female characters?
+* How can we differentiate between depictions of male and female characters?
+    + How do they act? How do others act onto them?
+    + How are they described?
 * Can we extract archetypes / stereotypes across genders through lexical analysis?
-* Do all of the aforementioned questions show an evolution over time? Do they show discernable differences across geographies?  
+* Do the aforementioned questions show an evolution over time? Do they show discernable differences across geographies?
 
 
 ## Proposed additional datasets
@@ -37,30 +37,21 @@ There are no additional datasets being considered for now.
 <br />
 
 * ___[Empath](https://github.com/Ejhfast/empath-client)___ - Empath [3] is a tool for analyzing text across lexical categories. It consists of categories which function as dictionaries for certain characteristics. For example, the 'masculine' category includes words such as handsome, aggressive, and dominant. Empath also has the power to create user provided lexical categorys by searching for associations through different models (e.g.  New York Times and Reddit). Empath is used on the output of the NLP pipeline in order to categorize the agent verbs, patient verbs, and attributes of each character. We will then build archetypes by combining categories. An example is the maiden archetype which consists of innocence, youth, and purity. We can thus track archetype alignments by gender through time. 
+<br />
 
-* ___[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)___ - Principal Component Analysis (PCA) is used in this study to understand which Empath categories can differentiate male and female characters in movies. For this analysis we use as features a manual selection of Empath categories, as well as the mean number of agent verbs, patient verbs and attributes. The male gaze theory states that "women are portrayed as passive objects of desire through a masculine lens", which is why we were interested in the number of agent/patient verbs for each gender. Then, as using single characters as samples for the PCA would not lead to robust sentiment analysis (only few words per sample), we clustered randomly female and male characters, leading to 33 female samples and 57 male samples. Before performing PCA analysis, the features are standardized. From the PCA result, we extract the features with higher correlation with the first principal component, and assume they are the most differentiative for gender.
+* ___[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)___ - Principal Component Analysis (PCA) is used in this study to understand which Empath categories can differentiate male and female characters in movies. For this analysis we use as features a manual selection of Empath categories, as well as the mean number of agent verbs, patient verbs and attributes. The male gaze theory states that "women are portrayed as passive objects of desire through a masculine lens", which is why we were interested in the number of agent/patient verbs for each gender. Then, as using single characters as samples for the PCA would not lead to robust sentiment analysis (only few words per sample), we clustered randomly female and male characters, leading to 33 female samples and 57 male samples. Before performing PCA analysis, the features are standardized. From the PCA result, we extract the features with higher correlation with the first principal component, and assume they are the most differentiative for gender. 
+<br />
 
-
-
-## Proposed timeline
-All of the following dates are deadlines. Many steps are independant and will be pursued in parallel.
-* 11.18.22 -- P2 due, shift focus to HW2
-* 12.4.022 -- Explore and decide between simple and complex website options
-* 12.11.22 -- Completed data analysis , Built website wireframe
-* 12.18.22 -- Website Populated with analysis results and datastory 
-* 12.22.22 -- Completed editing. All work compiled in one notebook, ReadMe finalized
-* 12.23.22 -- **P3 due** 
+* ___[Clustering](https://scikit-learn.org/stable/modules/clustering.html#clustering)___ - Clustering is conducted in order to try and naturally extract archetypes from our characters. Clusters are based on the empath categories associated with the most differentiative PCA scores. Our PCA was only able to account for ~50% of the data and the resulting clusters can be quite a mixed bag. Ultimately we settle on a 5 cluster approach which is split between two overrepresenting male characters, 2 overrepresenting female characters, and 1 ambiguous. We study their gender composition and evolution through time to attempt to understand how representation evolved through the decades. 
+<br />
 
 
 ## Organization within the team
-* Arthur - Empath category creation, website wireframe, datastory writer
-* Camille - Identify meaningful visualizations, data analysis, copy editor
-* Nico - Data cleaning, populating results in website, explore interactive graphics
-* Nerea - Continue data exploration, data processing, analysis, visualization
+* Arthur - Data pre-processing, empath category creation, website wireframe, primary writer
+* Camille - Preliminary PCA, Identify meaningful visualizations, data analysis, explore interactive graphics
+* Nico - Data pre-processing, Data cleaning, Website creation and formatting
+* Nerea - PCA + ongoing improvements, Continue data exploration, data processing, analysis, visualization
 
-
-## Questions for TAs 
-* In your opinion, is it woth the effort to try and recover the character names that are missing using the other Freebase IDs, or should we focus more on continuing the analysis with the available dataset?
 
 ## References
 
